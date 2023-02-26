@@ -1,0 +1,73 @@
+.container .title{
+    color:   rgb(253, 0, 0);
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0 2px;
+}
+
+.title .query-text{
+    color:  rgb(253, 0, 0);
+}
+
+.movies-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    max-width:1400px;
+    margin: 0 auto;
+}
+
+.movies-container div{
+    width: 310px;
+    color:  rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    justify-content: space-between;
+    padding: 0.7rem;
+    background-color:rgb(41, 41, 41);
+    border-radius: 6px;
+    margin:1rem;
+    transition: 1.5s;
+}
+
+.movies-container div img{
+    max-width: 100%;
+}
+
+.movies-container div img, .movies-container div p , .movies-container div h2 {
+    margin-bottom: 0.3rem;
+}
+
+.movies-container div svg{
+    color: rgb(253, 0, 0);
+}
+ 
+.movies-container div a {
+    background-color:  rgb(248, 0, 0);
+    border-radius: 4px ;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.8rem 0.5rem;
+    align-items:center;
+    transition: .9s;
+    font-weight: bold ;
+
+}
+.movies-container div a:hover{
+    background-color:transparent ;
+    color:  rgb(253, 0, 0);
+    scale: 1.02;
+}
+
+
+.movies-container div:has(:hover) {
+    opacity: 1.2;
+    scale: 1.04;
+}
+
+.movies-container div:not(:hover) {
+    opacity: 0.9;
+    scale: 1;
+}
